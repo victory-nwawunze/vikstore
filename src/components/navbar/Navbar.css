@@ -1,3 +1,20 @@
 .logo-style {
   width: 50px;
 }
+.nav-container {
+  background-color: red;
+}
+.nav-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.list-flex {
+  display: flex;
+  align-items: center;
+}
+.list-flex > li {
+  list-style: none;
+  padding-left: 20px;
+  cursor: pointer;
+}
