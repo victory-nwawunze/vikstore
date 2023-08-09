@@ -1,3 +1,36 @@
 .slider-container {
-  width: 98%;
+  width: 100%;
+  overflow: hidden;
+}
+.img-style {
+  width: 100%;
+}
+.slide-1 {
+  background-image: url("/src/images/pexels-anna-shvets-3962294.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 50%;
+}
+.slide-2 {
+  background-image: url("/src/images/pexels-gustavo-fring-3985062.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 50%;
+  text-align: center;
+}
+.slide-3 {
+  background-image: url("/src/images/pexels-gustavo-fring-3985062.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 50%;
+  text-align: center;
+}
+.heading-text {
+  padding-top: 10%;
+}
+.description-text {
+  padding-bottom: 20px;
+}
+.btn {
+  margin-bottom: 10%;
 }
