@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import Logo from "../../images/cartImg-removebg-preview.png";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 const Navbar = () => {
   return (
     <nav className="nav-container">
@@ -9,7 +10,10 @@ const Navbar = () => {
         <ul className="list-flex">
           <li>Home</li>
           <li>Login</li>
-          <li>Cart</li>
+          <div className="shopping-cart">
+            <AiOutlineShoppingCart className="style-icon" />
+            <span className="count-item">1</span>
+          </div>
         </ul>
       </div>
     </nav>
