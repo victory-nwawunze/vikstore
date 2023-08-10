@@ -2,7 +2,7 @@
   width: 50px;
 }
 .nav-container {
-  background-color: #f84b4b;
+  background-color: white;
   padding: 5px 10px;
 }
 .nav-flex {
@@ -36,4 +36,8 @@
   background-color: black;
   padding: 5px 10px;
   border-radius: 55px;
+}
+.Logo-text {
+  display: flex;
+  align-items: center;
 }

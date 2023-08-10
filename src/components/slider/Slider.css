@@ -1,36 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+
 .slider-container {
-  width: 100%;
-  overflow: hidden;
-}
-.img-style {
-  width: 100%;
-}
-.slide-1 {
-  background-image: url("/src/images/pexels-anna-shvets-3962294.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 50%;
-}
-.slide-2 {
-  background-image: url("/src/images/pexels-gustavo-fring-3985062.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 50%;
-  text-align: center;
-}
-.slide-3 {
-  background-image: url("/src/images/pexels-gustavo-fring-3985062.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 50%;
-  text-align: center;
+  background-color: pink;
+  margin: 0px 3%;
 }
 .heading-text {
-  padding-top: 10%;
+  font-family: "Roboto", sans-serif;
+  font-size: 3.4em;
+  padding-right: 40px;
 }
-.description-text {
-  padding-bottom: 20px;
-}
-.btn {
-  margin-bottom: 10%;
+.flex-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
