@@ -1,0 +1,15 @@
+.img-size {
+  width: 30%;
+}
+.product-flex {
+  display: flex;
+  /* width: 90%; */
+  justify-content: space-between;
+  align-items: center;
+}
+.desc-style {
+  width: 80%;
+}
+.product-container {
+  margin-left: 10%;
+}
