@@ -3,9 +3,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Slider.css";
-import Img1 from "../../images/pexels-anna-shvets-3962294.jpg";
-import Img2 from "../../images/pexels-gustavo-fring-3985062.jpg";
-import Img3 from "../../images/pexels-sam-lion-5709656.jpg";
+import Img1 from "../../images/pexels-andrea-piacquadio-3755015-removebg-preview.png";
+import Img2 from "../../images/pexels-karolina-grabowska-5632399-removebg-preview.png";
+import Img3 from "../../images/pexels-karolina-grabowska-4968637-removebg-preview.png";
+import Button from "../button/Button";
+
 export default class SimpleSlider extends Component {
   render() {
     const settings = {
@@ -20,26 +22,77 @@ export default class SimpleSlider extends Component {
     return (
       <div className="slider-container">
         <Slider {...settings}>
-          <div className="slide-1">
-            <h1 className="heading-text">Lorem ipsum dolor sit.</h1>
-            <p className="description-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <button className="btn">Login</button>
+          <div>
+            <div className="flex-banner">
+              <div>
+                <img src={Img1} />
+              </div>
+              <div>
+                <h2 className="heading-text">
+                  Grab upto 50% Of On
+                  <br />
+                  Any Headphones
+                </h2>
+                <Button
+                  style={{
+                    padding: "10px 25px",
+                    borderRadius: "50px",
+                    border: "none",
+                    cursor: "pointer",
+                  }}
+                >
+                  Buy Now
+                </Button>
+              </div>
+            </div>
           </div>
-          <div className="slide-2">
-            <h1 className="heading-text">Lorem ipsum dolor sit.</h1>
-            <p className="description-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <button className="btn">Login</button>
+          <div>
+            <div className="flex-banner">
+              <div>
+                <img src={Img2} />
+              </div>
+              <div>
+                <h2 className="heading-text">
+                  Grab upto 50% Of On
+                  <br />
+                  Any Deals
+                </h2>
+                <Button
+                  style={{
+                    padding: "10px 25px",
+                    borderRadius: "50px",
+                    border: "none",
+                    cursor: "pointer",
+                  }}
+                >
+                  Shop Now
+                </Button>
+              </div>
+            </div>
           </div>
-          <div className="slide-3">
-            <h1 className="heading-text">Lorem ipsum dolor sit.</h1>
-            <p className="description-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <button className="btn">Login</button>
+          <div>
+            <div className="flex-banner">
+              <div>
+                <img src={Img3} />
+              </div>
+              <div>
+                <h2 className="heading-text">
+                  Make Payments with
+                  <br />
+                  Ease
+                </h2>
+                <Button
+                  style={{
+                    padding: "10px 25px",
+                    borderRadius: "50px",
+                    border: "none",
+                    cursor: "pointer",
+                  }}
+                >
+                  Make Payment Now
+                </Button>
+              </div>
+            </div>
           </div>
         </Slider>
       </div>

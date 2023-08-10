@@ -6,13 +6,19 @@ const Navbar = () => {
   return (
     <nav className="nav-container">
       <div className="nav-flex">
-        <img src={Logo} alt="Logo" className="logo-style" />
+        <div className="Logo-text">
+          <img src={Logo} alt="Logo" className="logo-style" />
+          <p style={{ fontWeight: "bolder" }}>
+            {" "}
+            Vik <span style={{ color: "red" }}>Store</span>
+          </p>
+        </div>
         <ul className="list-flex">
           <li>Home</li>
           <li>Login</li>
           <div className="shopping-cart">
             <AiOutlineShoppingCart className="style-icon" />
-            <span className="count-item">1</span>
+            <span className="count-item">0</span>
           </div>
         </ul>
       </div>
