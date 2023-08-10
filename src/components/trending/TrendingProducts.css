@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+
+.trending-slider-container {
+  background-color: pink;
+  /* margin: 0px 1%; */
+  overflow: hidden;
+}
+.heading-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.4em;
+  padding-right: 40px;
+}
+.flex-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* .btn {
+  padding: 10px 25px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+} */
