@@ -7,10 +7,10 @@ import TrendingProducts from "./components/trending/TrendingProducts";
 const App = () => {
   return (
     <div>
-      {/* <Navbar />
+      <Navbar />
       <Slider />
       <Favourites />
-      <TrendingProducts /> */}
+      <TrendingProducts />
       <Products />
     </div>
   );

@@ -15,7 +15,7 @@ const Navbar = () => {
         </div>
         <ul className="list-flex">
           <li>Home</li>
-          <li>Login</li>
+          <li>Log-In</li>
           <div className="shopping-cart">
             <AiOutlineShoppingCart className="style-icon" />
             <span className="count-item">0</span>
