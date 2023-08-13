@@ -41,3 +41,14 @@
   display: flex;
   align-items: center;
 }
+
+/* Toggle */
+.light {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.dark {
+  background-color: #333;
+  color: white;
+}

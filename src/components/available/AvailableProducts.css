@@ -1,4 +1,14 @@
 .item-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.option {
+  display: flex;
+  justify-content: space-between;
+}
+.img-hover:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  transition: ease-in-out 1.2s;
 }
