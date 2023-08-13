@@ -1,3 +1,4 @@
+import AvailableProducts from "./components/available/AvailableProducts";
 import Favourites from "./components/favourite/Favourites";
 import Navbar from "./components/navbar/Navbar";
 import Products from "./components/products/Products";
@@ -11,7 +12,8 @@ const App = () => {
       <Slider />
       <Favourites />
       <TrendingProducts />
-      <Products />
+      <AvailableProducts />
+      {/* <Products /> */}
     </div>
   );
 };
