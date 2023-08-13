@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Spinner from "../spinner/loadingSpinner";
 import Button from "../button/Button";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import "./Products.css";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -16,10 +16,12 @@ function Products() {
 
   const ProductsItem = async () => {
     try {
-      const response = await axios.get("https://fakestoreapi.com/products");
+      const response = await axios.get(
+        "https://api.escuelajs.co/api/v1/products"
+      );
 
       setProducts(response.data);
-      console.log(response.data);
+      console.log("This is the data==========>>", response.data);
       setLoading(false);
     } catch (error) {
       console.log(error);
@@ -34,13 +36,12 @@ function Products() {
       <h1>Most Recent Search</h1>
       <Swiper
         spaceBetween={100}
-        slidesPerView={3}
+        slidesPerView={5}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
         autoplay={{ delay: 2000, disableOnInteraction: false }} // Autoplay configuration
-        pagination={{ clickable: true }} // Pagination configuration
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Navigation]}
       >
         {loading ? (
           <Spinner />
@@ -48,19 +49,21 @@ function Products() {
           <p>Please Check Internet Connection</p>
         ) : (
           products.map((product) => (
-            <SwiperSlide>
-              {" "}
-              <img
-                src={product.image}
-                style={{ width: 190, marginLeft: 100 }}
-              />
-              <p>Title: {product.title}</p>
-              <p>Price :{product.price}</p>
-              <p>Description : {product.description}</p>
-              <p>Category : {product.category}</p>
-              <p>Rating : {product.rating.rate}</p>
-              <Button>Buy</Button>
-            </SwiperSlide>
+            <div className="slide-item">
+              <SwiperSlide>
+                {" "}
+                <img
+                  src={product.images}
+                  style={{ width: 250, marginLeft: 100 }}
+                />
+                <p>Title: {product.title}</p>
+                <p>Price :${product.price}</p>
+                <p>Description : {product.description}</p>
+                <p>Category : {product.category.name}</p>
+                {/* <p>Rating : {product.rating.rate}</p> */}
+                <Button>Buy</Button>
+              </SwiperSlide>
+            </div>
           ))
         )}
       </Swiper>

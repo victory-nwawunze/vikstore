@@ -1,6 +1,11 @@
 .product-img {
   width: 30%;
 }
+.slide-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* gap: 50px; */
+}
 /* .product-container {
   background-color: red;
   display: flex;
