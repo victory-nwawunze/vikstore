@@ -1,0 +1,13 @@
+.dark-mode {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.light-mode {
+  background-color: white;
+  color: black;
+}
+.FaIcon {
+  font-size: 30;
+  cursor: pointer;
+}
