@@ -3,9 +3,9 @@ import "./Navbar.css";
 import Logo from "../../images/cartImg-removebg-preview.png";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaSun } from "react-icons/fa";
-const Navbar = ({ isDarkMode, onToggle }) => {
+const Navbar = () => {
   return (
-    <nav className={`nav-container${isDarkMode ? "dark" : "light"}`}>
+    <nav>
       <div className="nav-flex">
         <div className="Logo-text">
           <img src={Logo} alt="Logo" className="logo-style" />
@@ -17,13 +17,7 @@ const Navbar = ({ isDarkMode, onToggle }) => {
         <ul className="list-flex">
           <li>Home</li>
           <li>Log-In</li>
-          <li>
-            <FaSun
-              style={{ fontSize: 30, cursor: "pointer" }}
-              isDarkMode={isDarkMode}
-              onToggle={onToggle}
-            />
-          </li>
+          <li></li>
           <div className="shopping-cart">
             <AiOutlineShoppingCart className="style-icon" />
             <span className="count-item">0</span>
